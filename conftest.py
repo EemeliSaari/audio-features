@@ -5,15 +5,9 @@ import librosa
 import numpy as np
 
 
-def pytest_addoption(parser):
-    parser.addoption('--datapath', action='store', default='genres')
-
-
 @pytest.fixture
 def test_signal(request):
-    path = pathlib.Path(request.config.option.datapath)
-    test_file = path.joinpath('blues').joinpath('blues.00000.wav')
-    y, sr = librosa.load(test_file)
+    y, sr = librosa.load(librosa.example('trumpet'))
     yield y
 
 
