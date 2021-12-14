@@ -17,7 +17,7 @@ img-loader
 ├── setup.cfg               # Setup configuration file
 |
 ├── audio_pipe              # Python package
-│   ├── cli.py              # Commandline tool
+│   ├── cli                 # Commandline tool
 │   ├── factors.py          # Component factory
 │   ├── pipeline.py         # Pipeline abstractions
 │   └── transformers.py     # Feature transformers
