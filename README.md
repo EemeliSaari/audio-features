@@ -25,7 +25,6 @@ img-loader
 ├── conftest.py             # Pytest fixtures and plugins
 ├── tests                   # Simple unittests for stability
 |
-├── summary_report.md       # More detailed description
 └── README.md               # This file
 ```
 
